@@ -1,0 +1,126 @@
+/* Keith Hough, keithsportfolio.com, 2017 */
+
+body, html {
+    background-color: #f0eadc;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 40px 0 0 40px;
+}
+
+header, footer, h1, h2 {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: rgba(64, 81, 105, .6);
+    border-radius: 3px;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    width: 50%;
+}
+
+input {
+    background: transparent;
+    border-style: none;
+    border-bottom: 3px solid #000;
+    color: #fff;
+    font-family: "American Typewriter", serif;
+    font-size: 2em;
+    padding-bottom: 6px;
+    width: 80%;
+}
+
+input:focus, textarea:focus { outline: none; }
+
+::placeholder {
+    color: #fff;
+    font-style: italic;
+}
+
+/**************************************
+BUTTONS
+**************************************/
+
+#add, #save {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: #fff;
+    display: inline-block;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 0 1em 2em 1em;
+    padding: .5em;
+    text-align: center;
+    width: 20%;
+}
+
+#add:hover, #save:hover {
+    background-color: #fff;
+    color: #506582;
+}
+
+#add, #save, span { cursor: pointer; }
+
+/**************************************
+TASKS
+**************************************/
+
+#tasks input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: "American Typewriter", serif;
+    font-size: 1.5em;
+    text-align: left;
+    width: 75%;
+}
+
+span {
+    background: transparent;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+span:hover { color: #c21538; }
+
+/************************************************
+MEDIA QUERIES
+************************************************/
+
+@media screen and (max-width: 767px) {
+
+    section {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+
+    #container {
+        padding: 20px 0 0 0;
+    }
+
+    section {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+}
